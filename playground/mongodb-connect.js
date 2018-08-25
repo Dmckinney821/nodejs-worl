@@ -6,7 +6,7 @@ const {MongoClient, ObjectID} = require('mongodb');
 
 // var obj = new ObjectID();
 // console.log(obj);
-// var user = {name: 'Andrew', age: 34};
+// var user = {name: 'Dan', age: 34};
 // var {name} = user;
 // console.log(name)
 MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, client) => {
@@ -37,6 +37,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, client) => {
         }
         console.log(result.ops[0]._id.getTimestamp())
     })
+    
 
 
     client.close();
